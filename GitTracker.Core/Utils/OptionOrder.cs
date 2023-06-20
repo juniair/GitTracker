@@ -48,6 +48,6 @@ namespace GitTracker.Core.Utils
             {
                 return 1;
             }
-        }
+        };
     }
 }

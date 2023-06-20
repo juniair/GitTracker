@@ -22,7 +22,7 @@ namespace GitTracker.Core.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace GitTracker.Core.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GitTracker.Core.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace GitTracker.Core.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,18 +61,27 @@ namespace GitTracker.Core.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Output file path.
+        ///   Looks up a localized string similar to 브랜치 이름을 지정합니다..
         /// </summary>
-        internal static string Destination_Path {
+        public static string BranchName {
             get {
-                return ResourceManager.GetString("Destination Path", resourceCulture);
+                return ResourceManager.GetString("BranchName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Git repository path.
+        ///   Looks up a localized string similar to 출력 파일의 경로를 지정합니다..
         /// </summary>
-        internal static string GitPath {
+        public static string DestinationPath {
+            get {
+                return ResourceManager.GetString("DestinationPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Git 리포지토리 경로를 지정합니다..
+        /// </summary>
+        public static string GitPath {
             get {
                 return ResourceManager.GetString("GitPath", resourceCulture);
             }
@@ -81,7 +90,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &apos;{0}&apos; 옵션이 잘못된 형식으로 정의되었습니다..
         /// </summary>
-        internal static string SentenceBadFormatConversionErrorOption {
+        public static string SentenceBadFormatConversionErrorOption {
             get {
                 return ResourceManager.GetString("SentenceBadFormatConversionErrorOption", resourceCulture);
             }
@@ -90,7 +99,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 옵션에 바인딩되지 않은 값이 잘못된 형식으로 정의되었습니다..
         /// </summary>
-        internal static string SentenceBadFormatConversionErrorValue {
+        public static string SentenceBadFormatConversionErrorValue {
             get {
                 return ResourceManager.GetString("SentenceBadFormatConversionErrorValue", resourceCulture);
             }
@@ -99,7 +108,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &apos;{0}&apos; 토큰을 인식할 수 없습니다.
         /// </summary>
-        internal static string SentenceBadFormatTokenError {
+        public static string SentenceBadFormatTokenError {
             get {
                 return ResourceManager.GetString("SentenceBadFormatTokenError", resourceCulture);
             }
@@ -108,7 +117,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &apos;{0}&apos; 을(를) 인식할 수 없습니다..
         /// </summary>
-        internal static string SentenceBadVerbSelectedError {
+        public static string SentenceBadVerbSelectedError {
             get {
                 return ResourceManager.GetString("SentenceBadVerbSelectedError", resourceCulture);
             }
@@ -117,7 +126,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 오류:.
         /// </summary>
-        internal static string SentenceErrorsHeadingText {
+        public static string SentenceErrorsHeadingText {
             get {
                 return ResourceManager.GetString("SentenceErrorsHeadingText", resourceCulture);
             }
@@ -126,7 +135,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 도움말 보기.
         /// </summary>
-        internal static string SentenceHelpCommandTextOption {
+        public static string SentenceHelpCommandTextOption {
             get {
                 return ResourceManager.GetString("SentenceHelpCommandTextOption", resourceCulture);
             }
@@ -135,7 +144,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 명령에 대한 자세한 도움말을 표시합니다..
         /// </summary>
-        internal static string SentenceHelpCommandTextVerb {
+        public static string SentenceHelpCommandTextVerb {
             get {
                 return ResourceManager.GetString("SentenceHelpCommandTextVerb", resourceCulture);
             }
@@ -144,7 +153,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 필수 옵션 &apos;{0}&apos;이(가) 없습니다..
         /// </summary>
-        internal static string SentenceMissingRequiredOptionError {
+        public static string SentenceMissingRequiredOptionError {
             get {
                 return ResourceManager.GetString("SentenceMissingRequiredOptionError", resourceCulture);
             }
@@ -153,7 +162,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 옵션 이름에 바인딩되지 않은 필수 스위치가 없습니다..
         /// </summary>
-        internal static string SentenceMissingRequiredValueError {
+        public static string SentenceMissingRequiredValueError {
             get {
                 return ResourceManager.GetString("SentenceMissingRequiredValueError", resourceCulture);
             }
@@ -162,7 +171,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &apos;{0}&apos; 옵션에 값이 없습니다..
         /// </summary>
-        internal static string SentenceMissingValueOptionError {
+        public static string SentenceMissingValueOptionError {
             get {
                 return ResourceManager.GetString("SentenceMissingValueOptionError", resourceCulture);
             }
@@ -171,7 +180,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 옵션: {0}은(는) {1}과(와) 호환되지 않습니다..
         /// </summary>
-        internal static string SentenceMutuallyExclusiveSetErrors {
+        public static string SentenceMutuallyExclusiveSetErrors {
             get {
                 return ResourceManager.GetString("SentenceMutuallyExclusiveSetErrors", resourceCulture);
             }
@@ -180,7 +189,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 선택한 명령이 없습니다..
         /// </summary>
-        internal static string SentenceNoVerbSelectedError {
+        public static string SentenceNoVerbSelectedError {
             get {
                 return ResourceManager.GetString("SentenceNoVerbSelectedError", resourceCulture);
             }
@@ -189,7 +198,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 그룹..
         /// </summary>
-        internal static string SentenceOptionGroupWord {
+        public static string SentenceOptionGroupWord {
             get {
                 return ResourceManager.GetString("SentenceOptionGroupWord", resourceCulture);
             }
@@ -198,7 +207,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &apos;{0}&apos; 옵션이 여러 번 정의되었습니다.&lt;.
         /// </summary>
-        internal static string SentenceRepeatedOptionError {
+        public static string SentenceRepeatedOptionError {
             get {
                 return ResourceManager.GetString("SentenceRepeatedOptionError", resourceCulture);
             }
@@ -207,7 +216,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 필수..
         /// </summary>
-        internal static string SentenceRequiredWord {
+        public static string SentenceRequiredWord {
             get {
                 return ResourceManager.GetString("SentenceRequiredWord", resourceCulture);
             }
@@ -216,7 +225,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 시퀀스 옵션 &apos;{0}&apos;이(가) 허용된 횟수보다 적거나 많이 정의되었습니다..
         /// </summary>
-        internal static string SentenceSequenceOutOfRangeErrorOption {
+        public static string SentenceSequenceOutOfRangeErrorOption {
             get {
                 return ResourceManager.GetString("SentenceSequenceOutOfRangeErrorOption", resourceCulture);
             }
@@ -225,7 +234,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 전환 값이 허용된 횟수보다 적게 정의됩니다..
         /// </summary>
-        internal static string SentenceSequenceOutOfRangeErrorValue {
+        public static string SentenceSequenceOutOfRangeErrorValue {
             get {
                 return ResourceManager.GetString("SentenceSequenceOutOfRangeErrorValue", resourceCulture);
             }
@@ -234,7 +243,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 옵션 값 &apos;{0}&apos; 설정 오류: {1}.
         /// </summary>
-        internal static string SentenceSetValueExceptionError {
+        public static string SentenceSetValueExceptionError {
             get {
                 return ResourceManager.GetString("SentenceSetValueExceptionError", resourceCulture);
             }
@@ -243,7 +252,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 알 수 없는 옵션 &apos;{0}&apos;.
         /// </summary>
-        internal static string SentenceUnknownOptionError {
+        public static string SentenceUnknownOptionError {
             get {
                 return ResourceManager.GetString("SentenceUnknownOptionError", resourceCulture);
             }
@@ -252,7 +261,7 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 사용법:.
         /// </summary>
-        internal static string SentenceUsageHeadingText {
+        public static string SentenceUsageHeadingText {
             get {
                 return ResourceManager.GetString("SentenceUsageHeadingText", resourceCulture);
             }
@@ -261,9 +270,18 @@ namespace GitTracker.Core.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 버전 정보를 표시합니다..
         /// </summary>
-        internal static string SentenceVersionCommandText {
+        public static string SentenceVersionCommandText {
             get {
                 return ResourceManager.GetString("SentenceVersionCommandText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 정보를 추출할 시작 일자를 지정합니다..
+        /// </summary>
+        public static string SinceTracker {
+            get {
+                return ResourceManager.GetString("SinceTracker", resourceCulture);
             }
         }
     }

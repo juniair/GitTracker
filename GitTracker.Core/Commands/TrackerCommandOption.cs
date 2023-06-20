@@ -9,12 +9,22 @@ namespace GitTracker.Core.Commands
 {
     public class TrackerCommandOption
     {
-        [Option('s', "gitpath", HelpText = "GitPath", ResourceType = typeof(Properties.Resources))]
+
+        public static DateTime Today => DateTime.Today;
+
+        [Option('s', "source", Default = "./", HelpText = "GitPath", ResourceType = typeof(Properties.Resources))]
         public string? GitPath { get; set; }
 
-        [Option('d', "dest", Default = "./output", HelpText = "Destination Path", ResourceType = typeof(Properties.Resources))]
+        [Option('d', "dest", Default = "./output", HelpText = "DestinationPath", ResourceType = typeof(Properties.Resources))]
         public string? DestinationPath { get; set; }
 
+        [Option('b', "branch", Default = "master", HelpText = "BranchName", ResourceType = typeof(Properties.Resources))]
+        public string? BranchName { get; set; }
 
+        [Option('s', "since", HelpText = "SinceTracker", ResourceType = typeof(Properties.Resources))]
+        public DateTime Since 
+        { 
+            get; set; 
+        }
     }
 }

@@ -8,7 +8,7 @@ namespace GitTracker.Core.Service
 {
     public interface ITrackerService
     {
-        public ITrackerService AddGitPaht(string gitpath);
+        public ITrackerService AddSourcePath(string gitpath);
         public ITrackerService AddDestinationPath(string destinationPath);
         public void run();
     }

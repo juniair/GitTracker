@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Destination Path" xml:space="preserve">
-    <value>Output file path</value>
+  <data name="BranchName" xml:space="preserve">
+    <value>브랜치 이름을 지정합니다.</value>
+  </data>
+  <data name="DestinationPath" xml:space="preserve">
+    <value>출력 파일의 경로를 지정합니다.</value>
   </data>
   <data name="GitPath" xml:space="preserve">
-    <value>Git repository path</value>
+    <value>Git 리포지토리 경로를 지정합니다.</value>
   </data>
   <data name="SentenceBadFormatConversionErrorOption" xml:space="preserve">
     <value>'{0}' 옵션이 잘못된 형식으로 정의되었습니다.</value>
@@ -185,5 +188,8 @@
   </data>
   <data name="SentenceVersionCommandText" xml:space="preserve">
     <value>버전 정보를 표시합니다.</value>
+  </data>
+  <data name="SinceTracker" xml:space="preserve">
+    <value>정보를 추출할 시작 일자를 지정합니다.</value>
   </data>
 </root>
