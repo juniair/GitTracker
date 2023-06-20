@@ -21,10 +21,10 @@ namespace GitTracker.Core.Commands
         [Option('b', "branch", Default = "master", HelpText = "BranchName", ResourceType = typeof(Properties.Resources))]
         public string? BranchName { get; set; }
 
-        [Option('s', "since", HelpText = "SinceTracker", ResourceType = typeof(Properties.Resources))]
-        public DateTime Since 
-        { 
-            get; set; 
-        }
+        [Option("since", HelpText = "SinceTracker", ResourceType = typeof(Properties.Resources))]
+        public DateTime Since { get; set; }
+
+        [Option("duplicateMode", Default = false, HelpText = "Duplicate", ResourceType = typeof(Properties.Resources))]
+        public bool CanDuplicate { get; set; }
     }
 }

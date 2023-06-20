@@ -9,11 +9,11 @@ namespace GitTracker.Core.Models
 {
     internal class TrackerInfo
     {
-        internal string? Id { private get; set; }
-        internal string? Author { private get; set; }
-        internal string? Date { private get; set; }
-        internal string Path { private get; set; }
-        internal ChangeKind Status { private get; set; }
+        internal string? Id { get; set; }
+        internal string? Author { get; set; }
+        internal string? Date { get; set; }
+        internal string? Path { get; set; }
+        internal ChangeKind Status { get; set; }
 
         public override string ToString()
         {

@@ -5,9 +5,6 @@ using GitTracker.Core.Commands;
 using GitTracker.Core.Commands.Builder;
 using GitTracker.Core.Service;
 using GitTracker.Core.Utils;
-using System.Reflection;
-
-Console.WriteLine("Hello, World!");
 
 SentenceBuilder.Factory = () => new LocalizableSentenceBuilder();
 
@@ -18,9 +15,14 @@ using (var parser = new Parser(with => with.HelpWriter = null))
         .WithParsed((option) =>
         {
             var service = new TrackerService();
-            service.AddSourcePath(@"D:\workspace\00_git\murph_project\murph");
-            service.AddDestinationPath(option.DestinationPath);
-            service.run();
+            service.AddSourcePath(option.GitPath)
+                        .AddDestinationPath(option.DestinationPath)
+                        .AddBranchName(option.BranchName)
+                        .AddSinceDateTime(option.Since)
+                        .AddDuplicateMode(option.CanDuplicate)
+                        .run();
+            Console.WriteLine("종료하시려면 아무키나 입력하세요.");
+            Console.Read();
         })
         .WithNotParsed(errors => DisplayHelp(parserResult, errors));
 }

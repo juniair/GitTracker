@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace GitTracker.Core.Service
 {
-    public interface ITrackerService
+    public interface ITrackerService<T>
     {
-        public ITrackerService AddSourcePath(string gitpath);
-        public ITrackerService AddDestinationPath(string destinationPath);
+        public T AddSourcePath(string gitpath);
+        public T AddDestinationPath(string destinationPath);
         public void run();
     }
 }

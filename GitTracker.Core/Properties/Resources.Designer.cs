@@ -79,6 +79,15 @@ namespace GitTracker.Core.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 중복된 파일에 대해서는 출력하지 않습니다..
+        /// </summary>
+        public static string Duplicate {
+            get {
+                return ResourceManager.GetString("Duplicate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Git 리포지토리 경로를 지정합니다..
         /// </summary>
         public static string GitPath {
