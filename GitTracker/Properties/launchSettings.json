@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GitTracker": {
+      "commandName": "Project",
+      "commandLineArgs": "-s D:\\workspace\\00_git\\murph_project\\murph -d D:\\commit_list.csv --since 2023-04-25 --duplicateMode"
+    }
+  }
+}
